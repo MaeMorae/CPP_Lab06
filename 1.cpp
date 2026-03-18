@@ -9,18 +9,19 @@ int main() {
     float array_temporary[N];
     float mean_v0, mean_v1 = 0;
     int count0 = 0;
-    for (int i = 0; i < N; i++) {
+    int i;
+    for (i = 0; i < N; i++) {
         mean_v0 += array1[i];
         if (array1[i] == 0) count0++;
         else array_temporary[i-count0] = array1[i];
     }
     float array2[N-count0];
-    for (int i = 0; i < N-count0; i++) {
+    for (i = 0; i < N-count0; i++) {
         array2[i] = array_temporary[i];
     }
     float mean_v2 = mean_v0 / (N-count0);
     mean_v0 /= N;
-    for (int i = 0; i < N; i++) {
+    for (i = 0; i < N; i++) {
         if (array1[i] == 0) array1[i] = mean_v0;
         mean_v1 += array1[i];
     }
@@ -36,11 +37,11 @@ int main() {
     else {
         printf("Среднее первого массива равно второму: %f\n", mean_v1);
     }
-    for (int i = 0; i < N; i++) {
+    for (i = 0; i < N; i++) {
         printf("%f ", array1[i]);
     }
     cout << endl;
-    for (int i = 0; i < N-count0; i++) {
+    for (i = 0; i < N-count0; i++) {
         printf("%f ", array2[i]);
     }
 }
