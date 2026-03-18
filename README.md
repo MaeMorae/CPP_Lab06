@@ -28,4 +28,24 @@ array1[10] = {1.23, -4.56, 3.45, -2.78, 0.91, -3.14, 2.67, -1.89, 4.32, -0.12}\
 Задание 2:\
 Дан текст. Подсчитать сколько раз в нем встречается определенное слово
 
-Тесты:
+Тесты:\
+keyword = "man" text: man man man Man MAN mAn tman manta\
+Количество вхождений слова man в текст: 6\
+keyword = "man" text: All men are created equal and every man is created equal\
+Количество вхождений слова man в текст: 1\
+keyword = "man" text: Amanti is a very manly man and Manaki is also a very pleasant human being\
+Количество вхождений слова man в текст: 1\
+keyword = "man" text: kereman man AMAn man mAn man lmao MAN\
+Количество вхождений слова man в текст: 5\
+keyword = "and" text:\
+Everyone is entitled in full equality to a fair and public hearing by an independent and impartial tribunal,
+in the determination of his rights and obligations and of any criminal charge against him.\
+Количество вхождений слова and в текст: 4\
+keyword = "or" text:\
+Everyone is entitled to all the rights and freedoms set forth in this Declaration, 
+without distinction of any kind, such as race, colour, sex, language, religion, political or other opinion, 
+national or social origin, property, birth or other status. 
+Furthermore, no distinction shall be made on the basis of the political, 
+jurisdictional or international status of the country or territory to which a person belongs, 
+whether it be independent, trust, non-self-governing or under any other limitation of sovereignty.\
+Количество вхождений слова or в текст: 6
